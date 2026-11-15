@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: "es"
+logo_url: /assets/escudo.svg
+
+publish_mode: simple
+
+collections:
+  - name: "web"
+    label: "Contenido de la web"
+    files:
+      - name: "principal"
+        label: "Textos, portada y redes"
+        file: "content/site.json"
+        fields:
+          - { label: "Nombre de la web", name: "site_title", widget: "string" }
+          - { label: "Descripción para buscadores", name: "meta_description", widget: "text", required: false }
+          - { label: "Título de portada", name: "hero_title", widget: "string" }
+          - { label: "Subtítulo de portada", name: "hero_subtitle", widget: "string" }
+          - { label: "Fotografía principal", name: "hero_image", widget: "image", choose_url: false }
+          - { label: "Descripción de la fotografía principal", name: "hero_image_alt", widget: "string", required: false }
+          - { label: "Título de bienvenida", name: "intro_title", widget: "string" }
+          - { label: "Texto de bienvenida", name: "intro_text", widget: "text" }
+          - { label: "Título de historia", name: "history_title", widget: "string" }
+          - { label: "Texto de historia", name: "history_text", widget: "text" }
+          - { label: "Título de la obra", name: "work_title", widget: "string" }
+          - { label: "Texto de la obra", name: "work_text", widget: "text" }
+          - { label: "Nombre de la directora", name: "director_name", widget: "string" }
+          - { label: "Cargo o función", name: "director_role", widget: "string" }
+          - { label: "Texto sobre la dirección", name: "director_text", widget: "text" }
+          - { label: "Título del apartado Golfines", name: "golfines_title", widget: "string" }
+          - { label: "Texto del apartado Golfines", name: "golfines_text", widget: "text" }
+          - label: "Próximas representaciones"
+            name: "events"
+            widget: "list"
+            summary: "{{fields.title}}"
+            required: false
+            fields:
+              - { label: "Nombre de la representación", name: "title", widget: "string" }
+              - { label: "Fecha", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, picker_utc: false, required: false }
+              - { label: "Lugar", name: "location", widget: "string", required: false }
+              - { label: "Información", name: "description", widget: "text", required: false }
+          - { label: "Introducción de la galería", name: "gallery_intro", widget: "string" }
+          - label: "Fotografías de la galería"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Fotografía", name: "image", widget: "image", choose_url: false }
+              - { label: "Texto alternativo", name: "alt", widget: "string", required: false }
+              - { label: "Pie de foto", name: "caption", widget: "string" }
+          - { label: "Texto de la sección de vídeos", name: "videos_intro", widget: "string" }
+          - label: "Vídeos de YouTube"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Título del vídeo", name: "title", widget: "string" }
+              - { label: "Enlace de YouTube", name: "url", widget: "string", hint: "Pega el enlace normal del vídeo de YouTube." }
+          - { label: "Título de contacto", name: "contact_title", widget: "string" }
+          - { label: "Texto de contacto", name: "contact_text", widget: "text" }
+          - { label: "Correo electrónico", name: "contact_email", widget: "string", required: false }
+          - { label: "Instagram", name: "instagram_url", widget: "string", required: false }
+          - { label: "Facebook", name: "facebook_url", widget: "string", required: false }

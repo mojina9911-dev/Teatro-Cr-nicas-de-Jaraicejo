@@ -1,0 +1,35 @@
+{
+  "site_title": "Crónicas de Jaraicejo",
+  "meta_description": "Crónicas de Jaraicejo: historia, memoria y teatro en una recreación medieval de nuestra villa.",
+  "hero_title": "Crónicas de Jaraicejo",
+  "hero_subtitle": "Un viaje a nuestra historia. Siglo XV.",
+  "hero_image": "/images/plaza-mayor-jaraicejo.jpg",
+  "hero_image_alt": "Plaza Mayor de Jaraicejo y su iglesia, engalanadas para una representación teatral",
+  "intro_title": "Donde la memoria cobra vida",
+  "intro_text": "Crónicas de Jaraicejo es un proyecto teatral que acerca al público a la historia y a las raíces de nuestra localidad. Un encuentro con el pasado contado desde el escenario, con emoción, personajes y participación colectiva.",
+  "history_title": "Jaraicejo medieval",
+  "history_text": "Jaraicejo guarda una memoria que merece ser contada. Esta sección propone un recorrido por sus raíces medievales y por la evolución de la villa, combinando historia local y recreación teatral.",
+  "work_title": "La obra Crónicas de Jaraicejo",
+  "work_text": "Una propuesta escénica para compartir la historia de Jaraicejo, recuperar recuerdos y convertir sus calles y plazas en un espacio de encuentro entre pasado y presente.",
+  "director_name": "Ana Torres León",
+  "director_role": "Idea original y dirección artística",
+  "director_text": "La dirección artística da forma a esta propuesta teatral y a su manera de acercar la historia al público.",
+  "golfines_title": "Los Golfines atacan de nuevo",
+  "golfines_text": "Un capítulo teatral para descubrir, disfrutar y compartir. Consulta aquí las novedades y próximas representaciones.",
+  "gallery_intro": "Fotografías de la plaza, los preparativos, los ensayos y las representaciones.",
+  "gallery": [
+    {
+      "image": "/images/plaza-mayor-jaraicejo.jpg",
+      "alt": "Plaza Mayor de Jaraicejo y la iglesia",
+      "caption": "La Plaza Mayor de Jaraicejo"
+    }
+  ],
+  "videos_intro": "Próximamente, vídeos y recuerdos audiovisuales de nuestras representaciones.",
+  "videos": [],
+  "contact_title": "Sigamos escribiendo Crónicas",
+  "contact_text": "Para información sobre el proyecto, colaboraciones y próximas representaciones, ponte en contacto con la organización.",
+  "contact_email": "",
+  "instagram_url": "https://www.instagram.com/cronicasdejaraicejo/",
+  "facebook_url": "",
+  "events": []
+}
